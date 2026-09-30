@@ -1,4 +1,4 @@
-# Measures of Position
+# Measures of Position (FULL VERSION)
 
 ## Definition
 
