@@ -250,6 +250,3 @@ Data (already sorted): $5, 8, 12, 15, 18, 21, 24, 30, 60$
 **4.** Find $D_5$ and $P_{50}$ without using their formulas.
 
 **5.** Maria is in the 75th percentile of her class. Which quartile is she at, and what does it mean?
-
-> [!success]- Answer
-> $P_{75} = Q_3$, the third quartile. She scored as high as or higher than about 75% of her classmates.
