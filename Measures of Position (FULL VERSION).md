@@ -1,5 +1,7 @@
 # Measures of Position (FULL VERSION)
 
+> Note: THIS IS THE FULL VERSION. The simple version is in README. 
+
 ## Definition
 
 A **measure of position** tells you **where a value stands relative to the rest of the data**. It answers questions like:
