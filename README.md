@@ -240,26 +240,14 @@ Data (already sorted): $5, 8, 12, 15, 18, 21, 24, 30, 60$
 
 **1.** Find $Q_1$, $Q_2$, and $Q_3$.
 
-> [!success]- Answer
-> $n = 9$, so $n + 1 = 10$.
-> - $Q_1$: position $\frac{1(10)}{4} = 2.5$ → between 8 and 12 → $8 + 0.5(4) = 10$
-> - $Q_2$: position $\frac{2(10)}{4} = 5$ → the 5th value → $18$
-> - $Q_3$: position $\frac{3(10)}{4} = 7.5$ → between 24 and 30 → $24 + 0.5(6) = 27$
 
 **2.** Find $D_4$.
 
-> [!success]- Answer
-> Position $\frac{4(10)}{10} = 4$ → the 4th value → $15$
 
 **3.** Find $P_{80}$.
 
-> [!success]- Answer
-> Position $\frac{80(10)}{100} = 8$ → the 8th value → $30$
 
 **4.** Find $D_5$ and $P_{50}$ without using their formulas.
-
-> [!success]- Answer
-> Both are the median, so both equal $Q_2 = 18$.
 
 **5.** Maria is in the 75th percentile of her class. Which quartile is she at, and what does it mean?
 
