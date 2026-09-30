@@ -107,7 +107,7 @@ $$
 
 **What this means:** about a quarter of the class scored 28.5 or lower, half scored 34 or lower, and three quarters scored 39.5 or lower.
 
-> [!tip] If the position is a whole number
+> If the position is a whole number,
 > No interpolation needed. Just take the value at that position. For example, if the position comes out to exactly $5$, the answer is the 5th value.
 
 ---
@@ -193,7 +193,7 @@ $$
 
 About 90% of the class scored 45.5 or lower. So to be in the **top 10%**, a student needed to score **higher than 45.5**.
 
-> [!warning] Percentile is not percentage
+> Warning: Percentile is not percentage.
 > Being in the **90th percentile** means you did better than about 90% of the people who took the test. It does **not** mean you got 90% of the items right. On a very hard test, a score of 60% could still be in the 90th percentile.
 
 ---
