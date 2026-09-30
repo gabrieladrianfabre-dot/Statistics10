@@ -50,7 +50,7 @@ $$
 
 So you only need one master formula, the percentile one. Quartiles and deciles are special cases.
 
-> [!warning] Percentile ≠ percentage
+> Warning: Percentile ≠ percentage
 > Scoring at the **90th percentile** means you scored higher than about 90% of the people who took the test. It says nothing about getting 90% of the items right. On a very hard exam, a raw score of 45% could be the 90th percentile.
 
 ---
@@ -93,7 +93,7 @@ $$
 \boxed{\text{value} = x_{(w)} + f\,\big(x_{(w+1)} - x_{(w)}\big)}
 $$
 
-> [!note] Rounding shortcut
+> Note: Rounding shortcut
 > Some textbooks round the position instead of interpolating (for example, round $3.25$ down to $3$, or take the average when the position ends in $.5$). This is fine for a rough answer, but interpolation is more precise and is the standard in DepEd modules.
 
 ### Worked example
@@ -144,7 +144,7 @@ $$
 
 Interpretation: about 90% of the class scored at or below 45.5. To be in the top 10%, you'd need more than 45.5.
 
-> [!warning] Edge cases
+> Edge cases:
 > If the position is **below 1** (e.g. $P_5$ with $n = 12$ gives $L = 0.65$), use the smallest value. If it's **above $n$**, use the largest. With only 12 data points you can't really tell the 5th percentile apart from the minimum. Extreme percentiles need a lot of data to mean anything.
 
 ---
@@ -163,8 +163,8 @@ Ask three calculators for $Q_1$ and $Q_3$ of the quiz data above and you'll get 
 
 **None of these is wrong.** A quantile of a *sample* is an estimate, and there are at least nine standard ways to define it (Hyndman & Fan, 1996, catalogued them). The differences shrink as $n$ grows. For $n = 1000$ they're negligible. For $n = 12$ they matter.
 
-> [!tip] Practical rule
-> On a DepEd exam, use $p(n+1)$ with interpolation unless the problem says otherwise. In real work, **state which method you used**, and use the same one when comparing groups.
+> Practical rule: 
+> On an exam, use $p(n+1)$ with interpolation unless the problem says otherwise. In real work, **state which method you used**, and use the same one when comparing groups.
 
 ---
 
@@ -245,7 +245,7 @@ The score **10 is below 12, so it's an outlier.** Nothing is above 56.
 
 Some texts add a second pair of fences at $3 \cdot IQR$. Values beyond those are **extreme outliers**. Values between the $1.5$ and $3$ fences are **mild outliers**.
 
-> [!question]- Why 1.5, specifically?
+> Why 1.5, specifically?
 > It's a convention, but a well-chosen one. For data from a normal (bell-shaped) distribution, $Q_1$ and $Q_3$ sit about $0.674\sigma$ from the mean, so $IQR \approx 1.349\sigma$. The upper fence lands at about
 > $$\mu + 0.674\sigma + 1.5(1.349\sigma) \approx \mu + 2.7\sigma$$
 > Only about **0.7%** of normal data falls outside the two fences. So the rule rarely flags ordinary values, but it catches points that really are unusual. Tukey reportedly said 1 was too small and 2 too large.
@@ -281,7 +281,7 @@ In the quiz plot, the median ($34$) is exactly in the center of the box ($28.5$ 
 - **Box widths (IQRs)**: which group is more consistent?
 - **Overlap**: if one group's box lies entirely above the other's, the difference is large. If the boxes overlap heavily, the groups are similar.
 
-> [!warning] What box plots hide
+> Warning: What box plots hide
 > A box plot doesn't show how many data points there are, and it can't show two peaks (bimodality). Two very different data sets can have identical box plots. When possible, look at a histogram too.
 
 ---
@@ -329,7 +329,7 @@ $$
 
 That's the formula. It's the same linear interpolation as Part 2, applied inside a class.
 
-> [!note] $N$ vs. $n+1$
+> Note: $N$ vs. $n+1$
 > Grouped-data formulas use $\frac{kN}{4}$, not $\frac{k(N+1)}{4}$. The class is treated as a continuous stretch with no individual points, so the "gaps between points" argument for $n+1$ doesn't apply.
 
 ### Worked example
@@ -408,7 +408,7 @@ Math, by a lot, even though the raw score was lower.
 |---|---|---|---|---|---|---|---|
 | Percentile | 2.3 | 15.9 | 25 ($Q_1$) | 50 | 75 ($Q_3$) | 84.1 | 97.7 |
 
-> [!tip] Quantiles or z-scores?
+> Tip: Quantiles or z-scores?
 > Use **quantiles** when the data is skewed or has outliers. They depend only on order, so extreme values barely move them. Use **z-scores** when the data is roughly symmetric and bell-shaped. The mean and standard deviation are both pulled around by outliers, so z-scores inherit that weakness.
 
 ---
@@ -501,43 +501,17 @@ Data (sorted): $5, 8, 12, 15, 18, 21, 24, 30, 60$
 
 **1.** Find $Q_1$, $Q_2$, and $Q_3$.
 
-> [!success]- Answer
-> $n = 9$, $n + 1 = 10$.
-> - $Q_1$: $L = 2.5$ → $8 + 0.5(12 - 8) = 10$
-> - $Q_2$: $L = 5$ → $18$
-> - $Q_3$: $L = 7.5$ → $24 + 0.5(30 - 24) = 27$
-
 **2.** Find the IQR and the fences. Are there any outliers?
-
-> [!success]- Answer
-> $IQR = 27 - 10 = 17$. Fences: $10 - 25.5 = -15.5$ and $27 + 25.5 = 52.5$. **60 is an outlier.**
 
 **3.** Find $D_4$ and $P_{80}$.
 
-> [!success]- Answer
-> - $D_4$: $L = \frac{4 \cdot 10}{10} = 4$ → $15$
-> - $P_{80}$: $L = \frac{80 \cdot 10}{100} = 8$ → $30$
-
 **4.** Find the percentile rank of 21.
-
-> [!success]- Answer
-> $B = 5$, $E = 1$: $PR = \frac{5.5}{9} \times 100 \approx 61.1$
 
 **5.** Using the grouped table in Part 6, find $P_{25}$ and $D_8$.
 
-> [!success]- Answer
-> - $P_{25}$ is the same as $Q_1 \approx 62.72$.
-> - $D_8$: position $\frac{8 \cdot 40}{10} = 32$ → class 81–90. $80.5 + \frac{32 - 29}{8}(10) = 84.25$
-
 **6.** (Conceptual) Two sections take the same test. Section A has median 30 and IQR 4. Section B has median 30 and IQR 15. What can you conclude?
 
-> [!success]- Answer
-> The typical student did equally well in both. Section A's scores are much more tightly clustered, so its students performed more consistently. Section B has a wider mix of strong and weak performers.
-
 **7.** (Conceptual) A student scored at the 95th percentile on a test where the mean was 40%. Did they get 95% of the items right?
-
-> [!success]- Answer
-> Not necessarily, and probably not. The 95th percentile means they beat about 95% of test-takers. On a hard test, that could be a raw score of 70% or even lower.
 
 ---
 
