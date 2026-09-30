@@ -50,7 +50,7 @@ $$
 
 So you only need one master formula, the percentile one. Quartiles and deciles are special cases.
 
-> Warning: Percentile ≠ percentage
+> Warning: Percentile ≠ percentage. 
 > Scoring at the **90th percentile** means you scored higher than about 90% of the people who took the test. It says nothing about getting 90% of the items right. On a very hard exam, a raw score of 45% could be the 90th percentile.
 
 ---
@@ -93,7 +93,7 @@ $$
 \boxed{\text{value} = x_{(w)} + f\,\big(x_{(w+1)} - x_{(w)}\big)}
 $$
 
-> Note: Rounding shortcut
+> Note: Rounding shortcut. 
 > Some textbooks round the position instead of interpolating (for example, round $3.25$ down to $3$, or take the average when the position ends in $.5$). This is fine for a rough answer, but interpolation is more precise and is the standard in DepEd modules.
 
 ### Worked example
@@ -196,7 +196,7 @@ The student who scored 36 did better than about 62.5% of the class.
 
 **Percentile rank of 40:** $B = 9$, $E = 1$, so $PR = \frac{9.5}{12} \times 100 \approx 79.2$.
 
-> [!note] Why the round trip isn't exact
+> Note: Why the round trip isn't exact.
 > Going back from PR 62.5 to a score with the $p(n+1)$ formula gives $P_{62.5} = 36.25$, not exactly 36. The two formulas use slightly different conventions for "fraction below." With small data sets, don't expect percentile and percentile rank to be perfect inverses.
 
 Other common versions: some books use $\frac{B}{n} \times 100$ (strictly below only) or $\frac{B+E}{n} \times 100$ (at or below). Again, check which one your source uses.
