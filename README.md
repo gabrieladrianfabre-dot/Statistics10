@@ -1,6 +1,6 @@
 # Measures of Position (Simplified)
 
-> About this note
+> About this note:
 > A simpler, Grade 10-level version of [[Measures of Position]]. It covers only the basics: quartiles, deciles, and percentiles for ungrouped data.
 
 ## What is a measure of position?
