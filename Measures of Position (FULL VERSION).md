@@ -28,17 +28,7 @@ The core idea is **cut points**. Sort the data from smallest to largest, then pl
 
 The general name for all of these is a **quantile**. Any quantile is "the value below which a fraction $p$ of the data falls."
 
-> [!info] Curriculum link
-> MATATAG Grade 10 Mathematics, **First Term, Data and Probability** ([[G10 BOW Mathematics 10 - Three-Term.pdf]]):
-> - Illustrate measures of position (quartiles, deciles, and percentiles).
-> - Construct and interpret box-and-whisker plots and cumulative frequency histograms and polygons.
-> - Calculate a specified measure of position, interquartile range, and outliers, from ungrouped data.
-> - Calculate the percentile rank of a given score from ungrouped data.
-> - Draw conclusions from statistical data using the measures of position.
->
-> These notes cover all of that, then go further: grouped data, the competing calculation methods, z-scores, the theory behind quantiles, and where they show up in real life.
-
-## What you need first
+## First Requirements
 
 1. **Sorting.** Every measure of position starts by arranging the data in **increasing order**. Unsorted data gives nonsense.
 2. **The median** is the middle value of sorted data. With $n$ values it sits at position $\frac{n+1}{2}$. For odd $n$ that's an actual data point. For even $n$ it's halfway between the two middle values.
